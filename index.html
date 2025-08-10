@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yuvika Mishra — AI Resume</title>
+  <style>
+    :root{
+      --accent:#2c3e50;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f5f7fa;
+      --max-width:900px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+      color:#222;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      box-sizing:border-box;
+    }
+
+    .resume {
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 10px 30px rgba(16,24,40,0.08);
+      padding:28px;
+      box-sizing:border-box;
+      overflow:hidden;
+    }
+
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      border-bottom:1px solid #e6eef7;
+      padding-bottom:18px;
+      margin-bottom:18px;
+    }
+
+    .identity{
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+
+    .avatar {
+      width:78px;
+      height:78px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#dbeafe,#c7f9cc);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:22px;
+      flex:0 0 78px;
+    }
+
+    .name {
+      line-height:1;
+    }
+    .name h1{
+      margin:0;
+      font-size:22px;
+      color:var(--accent);
+    }
+    .name p{
+      margin:6px 0 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .contact {
+      text-align:right;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .contact a{color:var(--accent); text-decoration:none;}
+    .contact .line{margin:4px 0;}
+
+    main{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:22px;
+    }
+
+    /* Left column */
+    .left {
+      padding-right:6px;
+    }
+
+    section {
+      margin-bottom:18px;
+    }
+    h2{
+      font-size:16px;
+      margin:0 0 10px 0;
+      color:var(--accent);
+    }
+
+    p, li {
+      color:#263238;
+      font-size:14px;
+      margin:6px 0;
+    }
+
+    ul.skills {
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    ul.skills li{
+      background:#eef4fb;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--accent);
+    }
+
+    .project {
+      border-left:3px solid #eef6ff;
+      padding:8px 12px;
+      border-radius:6px;
+      background:linear-gradient(180deg, rgba(244,248,255,0.6), #fff);
+    }
+    .small {
+      color:var(--muted);
+      font-size:13px;
+      margin-top:6px;
+    }
+
+    /* Right column */
+    aside.card {
+      background:#fbfdff;
+      border-radius:8px;
+      padding:12px;
+      box-shadow:0 4px 12px rgba(13,24,40,0.03);
+      height:fit-content;
+    }
+    .cert li{margin-bottom:8px;}
+    .edu p{margin:4px 0; font-size:14px;}
+    .meta {font-size:13px; color:var(--muted);}
+
+    /* Responsive */
+    @media (max-width:880px){
+      main { grid-template-columns: 1fr; }
+      .contact { text-align:left; margin-top:10px; width:100%; }
+    }
+
+    /* Print */
+    @media print{
+      body{background:transparent;}
+      .resume{box-shadow:none; border-radius:0; padding:0; margin:0;}
+      header{border-bottom:1px solid #ddd;}
+    }
+  </style>
+</head>
+<body>
+  <article class="resume" aria-label="Resume — Yuvika Mishra">
+    <header>
+      <div class="identity">
+        <div class="avatar" aria-hidden="true">YM</div>
+        <div class="name">
+          <h1>Yuvika Mishra</h1>
+          <p class="meta">AI Enthusiast — Machine Learning • Deep Learning • NLP</p>
+        </div>
+      </div>
+
+      <div class="contact" aria-label="Contact information">
+        <div class="line">📞 <strong>9354984533</strong></div>
+        <div class="line">✉️ <a href="mailto:yuvika31mishra@gmail.com">yuvika31mishra@gmail.com</a></div>
+        <div class="line">🔗 <a href="https://linkedin.com/in/yuvikamishra" target="_blank" rel="noopener">linkedin.com/in/yuvikamishra</a></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="left">
+        <section aria-labelledby="objective">
+          <h2 id="objective">Career Objective</h2>
+          <p>
+            AI enthusiast with strong foundational knowledge in machine learning, deep learning, and natural language processing.
+            Passionate about building intelligent systems to solve real-world challenges and eager to contribute to innovative
+            AI-driven projects through continuous learning and hands-on application.
+          </p>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 id="projects">Projects</h2>
+
+          <div class="project" role="article">
+            <strong>Fake News Detection using NLP</strong>
+            <p class="small">Developed a model to classify news articles as real or fake using text preprocessing, TF-IDF vectorization, and logistic regression.</p>
+            <p class="small"><em>Tech:</em> Python, scikit-learn, Pandas, NLP</p>
+          </div>
+
+          <div class="project" role="article" style="margin-top:10px">
+            <strong>Image Classification using CNN</strong>
+            <p class="small">Built a convolutional neural network to classify images from the CIFAR-10 dataset into 10 categories.</p>
+            <p class="small"><em>Tech:</em> Python, TensorFlow, Keras, Matplotlib</p>
+          </div>
+
+          <div class="project" role="article" style="margin-top:10px">
+            <strong>Movie Recommendation System</strong>
+            <p class="small">Created a content-based movie recommender using cosine similarity and metadata (genres, cast, director).</p>
+            <p class="small"><em>Tech:</em> Python, scikit-learn, Pandas, Streamlit</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="skills">
+          <h2 id="skills">Skills</h2>
+          <ul class="skills" aria-label="Key skills">
+            <li>Python</li>
+            <li>C++</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>scikit-learn</li>
+            <li>Keras</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>SQL</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>Jupyter</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="card" aria-label="Sidebar — education and certifications">
+        <section class="edu" aria-labelledby="education">
+          <h2 id="education">Education</h2>
+          <p><strong>B.Tech — Bennett University</strong></p>
+          <p class="meta">2023 – 2027</p>
+          <p>CGPA: <strong>8.4 / 10</strong></p>
+        </section>
+
+        <section class="cert" aria-labelledby="certifications" style="margin-top:14px">
+          <h2 id="certifications">Certifications</h2>
+          <ul style="padding-left:16px;">
+            <li>Machine Learning – Coursera (Andrew Ng), July 2025</li>
+            <li>Deep Learning Specialization – Coursera (In Progress)</li>
+            <li>Python for Data Science – IBM (edX), June 2025</li>
+            <li>Natural Language Processing with Classification and Vector Spaces – DeepLearning.AI, June 2025</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+  </article>
+</body>
+</html>
